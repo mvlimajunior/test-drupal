@@ -29,10 +29,10 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_PROCESS_TIMEOUT 2000  
 RUN composer self-update --1
 
-# # drush 10.6.1
+# # drush 11.4.0
 RUN git clone https://github.com/drush-ops/drush.git /usr/local/src/drush
 WORKDIR /usr/local/src/drush
-RUN git checkout 10.6.1
+RUN git checkout 11.4.0
 RUN composer update
 RUN ln -s /usr/local/src/drush/drush /usr/bin/drush
 

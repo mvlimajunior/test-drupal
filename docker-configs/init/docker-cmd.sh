@@ -18,11 +18,12 @@ if  mysql -uroot -e "use ${MYSQL_DATABASE}"; then
     echo "Tabela já criada anteriormente"
 else
     echo "Importar backup."
-   
+    
+    mysql -uroot -e "update mysql.user set plugin = 'mysql_native_password' where User='root'; FLUSH PRIVILEGES;"
     mysql -uroot -e "CREATE DATABASE IF NOT EXISTS ${MYSQL_DATABASE}"
 
     echo "Banco de dados do docker-configs."
-    mysql -uroot ${MYSQL_DATABASE} <  /var/www/docker-configs/db/db.sql
+    mysql -uroot ${MYSQL_DATABASE} <  /var/www/html/db/dump-1.sql
 
     echo "Tabela criada utilizando o backup"
 fi
