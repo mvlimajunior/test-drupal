@@ -1,0 +1,18 @@
+uuid: b29f53dc-0276-4972-bdd2-070f253517c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actor
+id: node.actor.title
+field_name: title
+entity_type: node
+bundle: actor
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 6679f374-d0d1-462f-ad83-bb74914661bd
+name: test
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /movies
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

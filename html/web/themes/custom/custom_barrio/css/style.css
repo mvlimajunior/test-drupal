@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+
+ /* .visually-hidden-focusable.skip-link {
+   display: none;
+ } */
+
+ #navbar-top {
+   display: flex;
+   align-items: end;
+   flex-direction: column;
+}
+
+#navbar-main {
+   display: none;
+}
+
+#main-wrapper {
+   padding: 10px;
+}
+
+#main-wrapper .section {
+   min-height: 100vh;
+}

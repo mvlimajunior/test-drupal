@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    drupal-test:
+        build: .
+        restart: always
+        ports:
+            - 8160:80
+            - 8161:8080
+        container_name: drupal-test
+        environment:
+            MYSQL_DATABASE : drupal
+        volumes: 
+            - "./docker-configs:/var/www/docker-configs"
+            - "./html:/var/www/html"
